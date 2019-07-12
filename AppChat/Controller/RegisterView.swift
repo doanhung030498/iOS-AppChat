@@ -15,8 +15,14 @@ class RegisterView: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func backBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func createClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

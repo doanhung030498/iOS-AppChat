@@ -16,7 +16,13 @@ class ListGroupChat: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func backClick(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func creategrClick(_ sender: Any) {
+        self.present(CreateNewGroup(nibName: "CreateNewGroup", bundle: nil),animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

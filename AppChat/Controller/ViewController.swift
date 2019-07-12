@@ -10,14 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func LogBtn(_ sender: Any) {
-        self.present(RegisterView(nibName:"RegisterView", bundle: nil),animated: true, completion: nil)
-    }
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func LogBtn(_ sender: Any) {
+        self.present(RegisterView(nibName:"RegisterView", bundle: nil),animated: true, completion: nil)
+    }
+    @IBAction func loginClick(_ sender: Any) {
+        self.present(ListGroupChat(nibName: "ListGroupChat", bundle: nil),animated: true, completion: nil)
+    }
 
 }
 
